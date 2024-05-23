@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi è il personaggio?</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .select-container:hover option {
+      color: gold;
+    }
+  </style>
+</head>
+<body>
+  <div id="guessedCharactersContainer">
+    <table id="guessedCharacters">
+      <thead>
+        <tr>
+          <th>Personaggi Indovinati</th>
+        </tr>
+      </thead>
+      <tbody>
+     
+      </tbody>
+    </table>
+  </div>
+  <div class="container">
+    <h1>Dopo aver risposto e soperato la prima parte del gioco.</h1>
+    <p>Adesso prova ad indovinare il personaggio dalle scelte</p>
+
+    <div class="question"><h3>Quando è nato/a?</h3></div>
+    <select class="select-container" id="birthYear">
+      <option value="">Scegli un'opzione</option>
+    </select>
+
+    <div class="question"><h3>Il personaggio è vivo o morto?</h3></div>
+    <select class="select-container" id="DeadorAlive">
+      <option value="">Scegli un'opzione</option>
+    </select>
+
+    <div class="question"><h3>Di quale nazionalità è?</h3></div>
+    <select class="select-container" id="country">
+      <option value="">Scegli un'opzione</option>
+    </select>
+
+    <div class="question"><h3>In che ambito era il suo lavoro?</h3></div>
+    <select class="select-container" id="fieldOfWork">
+      <option value="">Scegli un'opzione</option>
+    </select>
+
+    <div class="question"><h3>Cosa ha fatto?</h3></div>
+    <select class="select-container" id="achievement">
+      <option value="">Scegli un'opzione</option>
+    </select>
+
+    <button onclick="checkGuess()">Indovina</button>
+    <p id="result"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
